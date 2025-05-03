@@ -1,0 +1,37 @@
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.App {
+  display: grid;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  grid-template-areas: "header header"
+                        "left-p right-p";
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  grid-area: header;
+}
+
+.left-panel{
+  padding: 20px;
+  grid-area: left-p;
+  width: 50%;
+}
+
+.right-panel{
+  padding: 20px;
+  grid-area: right-p;
+  width: 50%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
