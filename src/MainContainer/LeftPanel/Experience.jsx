@@ -1,5 +1,5 @@
 import React from "react";
-
+import './Experience.css'
 
 
 function Experience({experience, setExperience}){
@@ -16,40 +16,44 @@ function Experience({experience, setExperience}){
     return (
         <div className="form-section">
             <h2>Experience: </h2>
-            <label>
-                Position:
-                <input 
+            <div className="form-row">
+                <label htmlFor="position">Position: </label>
+                <input
+                id="position" 
                 type="text"
                 name="position"
                 value={experience.position}
                 onChange={handleInputChange} />
-            </label>
+            </div>
 
-            <label>
-                Start Date:
+            <div className="form-row">
+                <label htmlFor="start-date">Start Date: </label>
                 <input 
+                id="start-date"
                 type="date"
                 name="startDate"
                 value={experience.startDate}
                 onChange={handleInputChange} />
-            </label>
+            </div>
 
-            <label>
-                End Date:
+            <div className="form-row">
+                <label htmlFor="end-date">End Date</label>
                 <input 
+                id="end-date"
                 type="date"
                 name="endDate"
                 value={experience.endDate}
                 onChange={handleInputChange} />
-            </label>
-            <label>
-                Description:
+            </div>
+            <div className="form-row">
+                <label htmlFor="description">Description</label>
                 <textarea 
+                id="description"
                 type="text"
                 name="description"
                 value={experience.description}
                 onChange={handleInputChange} />
-            </label>
+            </div>
 
 
         </div>

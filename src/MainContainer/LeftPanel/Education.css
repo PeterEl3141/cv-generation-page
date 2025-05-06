@@ -1,0 +1,7 @@
+.form-section{
+    position: relative;
+}
+
+.form-section input{
+    right: 20px;
+}

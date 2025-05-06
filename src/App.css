@@ -1,12 +1,32 @@
+
+
+*{
+  box-sizing: border-box;
+  color: black;
+  overflow-x: hidden;
+}
+
 #root {
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+ 
+}
+
+body{
+  background-image: url('../../public/background.jpg');
+  background-size: cover;         /* Makes the image cover the entire element */
+  background-position: center;    /* Centers the image */
+  background-repeat: no-repeat;
+  
 }
 
 .App {
   display: grid;
   height: 100vh;
+  max-width: 100%;
   padding: 20px;
   box-sizing: border-box;
   grid-template-areas: "header header"
@@ -22,16 +42,68 @@
 .left-panel{
   padding: 20px;
   grid-area: left-p;
-  width: 50%;
+  width: 40vw;
 }
 
+
 .right-panel{
-  padding: 20px;
+  padding: 40px;
   grid-area: right-p;
-  width: 50%;
+  width: 60vw;
 }
 
 .form-section {
   display: flex;
   flex-direction: column;
+}
+
+.form-row{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label{
+  margin-right: 15px;
+  width: 150px;
+}
+
+.form-row input{
+  padding: 6px;
+  width: 200px;
+}
+
+input{
+  background-color: rgb(247, 241, 232);
+}
+
+.preview{
+  width: 794px;
+  height: 1123px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: auto;
+}
+
+.header{
+  
+    z-index: 1;
+}
+
+
+@media print {
+  body {
+    margin: 0;
+  }
+
+  .preview {
+    box-shadow: none;
+    width: auto;
+    height: auto;
+  }
+
+  .no-print {
+    display: none !important; /* Hide buttons etc. in print/PDF */
+  }
 }

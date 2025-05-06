@@ -1,4 +1,5 @@
 import React from "react";
+import logo from '../../assets/logo.png'
 
 function Title (){
 
@@ -6,7 +7,7 @@ function Title (){
 
     return (
         <nav className="header">
-            <h1>CV Generator</h1>
+            <img src={logo} alt="" />
         </nav>
     )
 }

@@ -36,20 +36,20 @@ function App() {
     <div className='App'>
       <Title/>
       <form className="left-panel">
-        <GeneralInfo className="form-section"
+        <GeneralInfo 
           generalInfo={generalInfo}
           setGeneralInfo={setGeneralInfo}
         />
 
         <hr />
 
-        <Education className="form-section"
+        <Education 
           education={education}
           setEducation={setEducation}/>
 
         <hr />
 
-        <Experience className="form-section"
+        <Experience 
           experience={experience}
           setExperience={setExperience}
         />
